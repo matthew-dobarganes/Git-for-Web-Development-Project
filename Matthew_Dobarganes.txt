@@ -1,0 +1,143 @@
+Link to the Codepen of Task 2 of the Git-for-Web-Development-Project: https://codepen.io/mattdobar/pen/YzGPgdb
+
+1. What is Semantic HTML?
+	To allow the web browser to effectively read our code and know what's what. For example a browser can read the tag "<nav></nav>"
+ 
+2. What is HTML used for?
+	Hypertext Markup Language. HTML is used for writing down the information that a website would convey; it's the structuring to the house
+ 
+3. What is an attribute and where do we put it? 
+	An attribute is an effect (like hyperlinks and functionality) that we can put into a tag
+
+4. What is the h1 tag used for? How many times should I use it on a page?
+	H1 tags are used for the main heading of the webpage, grammatically it should only be used once but some webpages sometimes have more than one. It depends on what the webpage is for.
+
+5. Name two tags that have required attributes
+	Img tag has the src attribute and the anchor tag has the href attribute
+
+6. What do we put in the head of our HTML document? 
+	At the top of the page, before the body and after our page's header
+
+7. What is an id? 
+	An id is an attribute we can use to differentiate tags from one another and call upon them to give them specific CSS stylings
+
+8. What elements can I add an id to? 
+	You can add an id to every element except heads and bodies. You can still add them but they really don't accomplish much 
+
+9. How many times can I use the same id on a page? 
+	You should only use a unique id once on a page, otherwise it'll cause you problems when adding Javascript to the page
+
+10. What is a class? 
+	A class is an attribute we can use to differentiate similar tags from one another and group them with other tags that we want to style in the same way. Classes can be applied to all tags, even if they're different
+
+11. What elements can I add a class to? 
+	All elements except heads and bodies. It's still possible but you don't accomplish much in doing so
+
+12. How many times can I use the same class on a page?
+	As many times as you'd like
+ 
+13. How do I get my link to open in a new tab?
+	You use the attribute 'target=' and point it to a new tab by writing "_blank". It'll look like this: <a href="https://Google.com" target="_blank">
+
+14. What is the alt attribute in the image tag used for? 
+	For accessibility with screen readers, it describes images for the visually impaired
+
+15. How do I reference an id?
+	#idNameHere {} (in CSS)
+
+16. What is the difference between a section and a div
+	section is semantic and div is non-semantic. They both accomplish relatively the same thing except for the slight difference in being semantic/non-semantic
+
+17. What is CSS used for? 
+	Cascading Stylesheets. We use CSS to style our HTML, it is the paint on the walls of our HTML
+
+18. How to we select an element? Example - every h2 on the page
+	h2 {}
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+	classes can be assigned to multiple tags and ids can only be used on one tag
+	classes: <section class="sections">This is my first section on the page</section><section class="sections">This is my second section on the page</section>
+	id's: <a id="linkToGoogle" href="https://Google.com">
+
+20. How do we select classes in CSS?
+	.classNameHere {}
+
+21. How do we select a p element with a single class of “human””?
+	.human p {}
+22. What is a parent child selector? When would this be useful? 
+	parent child selector is when you create a selector for a specific line of code that was created by, or is typically used in tandem with, another line of code.
+	a situation where this would be useful would be when you want to stylize specific lines of child code (like in unordered and ordered lists) without changing the overall styling of the rest of the parent code
+23. How do you select all links within a div with the class of sidebar?
+	.sidebar div {}
+
+24. What is a pseudo selector?
+	a pseudo selector is like a normal selector however you give it an action to activate with (for example "button:hover {}" activates whatever styling you put in the curly braces when you hover over the button with your cursor)
+
+25. What do we use the change the spacing between lines?
+	to change the spacing between lines we use the line-height property
+
+26. What do we use to change the spacing between letters?
+	to change the spacing between lines we use the letter-spacing property
+
+
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+	we use the letter-transform property with the commands of "uppercase" to make everything capitals, "lowercase" to make everything lowercase, and "capitalize" to make the first letter of the string capitalized
+
+28. How do I add a 1px border around my div that is dotted and black?
+	div {
+		border: dotted black XY (x = numerical value, y = sizing value (like px or em))
+}
+
+29. How do I select everything on the page? 
+	* {}
+
+30. How do I write a comment in CSS?
+	/* (enter comment in between the asterisks) */
+
+31. How do I find out what file I am in, when I am using the command line? 
+	pwd (print working directory)
+
+32. Using the command line - how do I see a list of files/folders in my current folder?
+	ls (list)
+
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+	$ rm filename.filetype
+	you must be careful with this because it is possible to lose all your work, more detailed removal commands can even delete ALL your files on your disk drive
+
+34. Why should I use version control?
+	you should use version control to maintain an organized project when working with others and to be able to back up to a stable, working version of the application or webpage you are working on whenever something goes wrong
+ 
+35. How often should I commit to github?
+	you should commit to github whenever meaningful changes have been made or at the end of your work day
+
+36. What is the command we would use to push our repo up to github? 
+	$ git push -u origin 'branch-name' (branch name is what you called your branch after cloning the file from github, usually in the form of firstname-lastname)
+
+37. Walk me through Lambda's git flow. 
+	Lambda's git flow is as follows:
+	1. you fork the file so that changes you make don't affect the source code
+	2. you clone the file onto your local machine
+	3. you branch from the clone to begin working on the code
+	4. commit any changes made and add commit messages declaring the changes for clarity's sake
+	5. push your branch back into the Lambda git
+	6. submit a pull request to the master of the git
+	7. complete the pull request and submit the link to Canvas
+--------------------------------------------------------------- Stretch Questions -----------------------------------------------------------
+
+1. What is the difference between an inline element and a block element?
+	Inline is like a set of train-cars all moving on the tracks one after another on the same track. If one cart is empty then the cart basically disappears. Who wants to haul an empty cart?
+	Block is like a wall, you can stack bricks on top of each other. A block takes up its own left-to-right line.
+
+2. What happens when an element is positioned absolutely?
+	It will maintain its position at all times and will not align itself with other elements; it is pinned in place.
+
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+	I would use inline-block to give it an automatic height and control the width.
+ 
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+	Block-like: divs, paragraphs, headers. 
+	Inline-like: spans, anchors
+	Inline-block: img
+
+5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+	Box model enables you to change the positioning and alignment content on your screen but it treats everything like a rectangular box with other boxes around it. It is similar to a Russian nesting doll, but with boxes.
+	The "fix" for the box model is to apply box-sizing: border-box; to everything so that the elements do not grow beyond the proportions that they are given, even after padding is provided.
