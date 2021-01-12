@@ -26,10 +26,23 @@ You will need to follow the Lambda School Git Workflow to add a file to this pro
 ## Task 3: Stretch
 Stretch Review questions: 
     1. What is the difference between an inline element and a block element?
-    2. What happens when an element is positioned absolutely? 
-    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+      Inline: an inline element is an element which only has access to the attributes of content written on its line in the HTML.
+      Block: block elements create a box around themselves and have access to the attributes of content inside of their "block".
+    
+    2. What happens when an element is positioned absolutely?
+      The element has priority on the UI and is on top of every other element on the page, can be changed by using screen position attributes in the css.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+      By using the width attribute. If you set it to 80% it'll only take up 80% of the user's page, no matter the device type.
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+      Block: divs, lists, and heading tags 1-6.
+      Inline: span and img
+      Inline-Block: 
+
     5. In your own words, explain the box model. What is the fix for the box model? 
+      . box-sizing: border-box;
+
 Stretch Git Tasks
 - [ ] While the processes learned here will set you up to be successful in most situations, they are just the tip of the iceberg in learning Git. Independently research the following topics to learn more about Git.
   - [ ] Research and understand what a `merge conflict` is and how to resolve it.
